@@ -6,20 +6,20 @@ import {
 } from 'react-icons/hi';
 
 export const genres = [
-  { title: 'Pop', value: 'POP' },
-  { title: 'Hip-Hop', value: 'HIP_HOP_RAP' },
-  { title: 'Dance', value: 'DANCE' },
-  { title: 'Electronic', value: 'ELECTRONIC' },
-  { title: 'Soul', value: 'SOUL_RNB' },
-  { title: 'Alternative', value: 'ALTERNATIVE' },
-  { title: 'Rock', value: 'ROCK' },
-  { title: 'Latin', value: 'LATIN' },
-  { title: 'Film', value: 'FILM_TV' },
-  { title: 'Country', value: 'COUNTRY' },
-  { title: 'Worldwide', value: 'WORLDWIDE' },
-  { title: 'Reggae', value: 'REGGAE_DANCE_HALL' },
-  { title: 'House', value: 'HOUSE' },
-  { title: 'K-Pop', value: 'K_POP' },
+  { title: '流行', value: 'POP' },
+  { title: '嘻哈', value: 'HIP_HOP_RAP' },
+  { title: '舞曲', value: 'DANCE' },
+  { title: '电子', value: 'ELECTRONIC' },
+  { title: '灵魂', value: 'SOUL_RNB' },
+  { title: '另类', value: 'ALTERNATIVE' },
+  { title: '摇滚', value: 'ROCK' },
+  { title: '拉丁', value: 'LATIN' },
+  { title: '电影', value: 'FILM_TV' },
+  { title: '乡村', value: 'COUNTRY' },
+  { title: '全球', value: 'WORLDWIDE' },
+  { title: '雷鬼', value: 'REGGAE_DANCE_HALL' },
+  { title: '电子舞曲', value: 'HOUSE' },
+  { title: '韩流', value: 'K_POP' },
 ];
 
 export const links = [
