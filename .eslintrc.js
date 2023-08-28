@@ -56,5 +56,9 @@ module.exports = {
         aspects: ['noHref', 'invalidHref', 'preferButton'],
       },
     ],
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: ['vite.config.js'] },
+    ],
   },
 };
