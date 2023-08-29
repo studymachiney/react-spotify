@@ -25,6 +25,6 @@ export const genres = [
 export const links = [
   { name: '发现', to: '/', icon: HiOutlineHome },
   { name: '附近', to: '/around-you', icon: HiOutlinePhotograph },
-  { name: '热门歌手', to: '/top-artists', icon: HiOutlineUserGroup },
+  { name: '歌手', to: '/top-artists', icon: HiOutlineUserGroup },
   { name: '热门榜单', to: '/top-charts', icon: HiOutlineHashtag },
 ];
