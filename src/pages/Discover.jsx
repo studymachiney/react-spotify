@@ -14,7 +14,7 @@ const Discover = () => {
   );
 
   if (isFetching) {
-    return <Loader title="Loading songs..." />;
+    return <Loader title="歌曲加载中..." />;
   }
 
   if (error) {

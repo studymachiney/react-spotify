@@ -32,7 +32,7 @@ const SongDetails = () => {
   };
 
   if (isFetchingSongDetails || isFetchingRelatedSongs) {
-    return <Loader title="正在搜索歌曲详情" />;
+    return <Loader title="正在加载歌曲详情" />;
   }
 
   if (error) {
