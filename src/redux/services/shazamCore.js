@@ -9,7 +9,7 @@ export const shazamCoreApi = createApi({
         'X-RapidAPI-Key',
         import.meta.env.VITE_SHAZAM_CORE_RAPID_API_KEY,
       );
-      headers.set('X-RapidAPI-Host', 'shazam-core.p.rapidapi.com');
+      // headers.set('X-RapidAPI-Host', 'shazam-core.p.rapidapi.com');
       return headers;
     },
   }),
@@ -29,6 +29,12 @@ export const shazamCoreApi = createApi({
     getArtistDetails: builder.query({
       query: ({ artistId }) => `v2/artists/details?artist_id=${artistId}`,
     }),
+    getSongsByCountry: builder.query({
+      query: (countryCode) => {
+        if (countryCode === 'HK') countryCode = 'CN';
+        return `v1/charts/country?country_code=${countryCode}`;
+      },
+    }),
   }),
 });
 
@@ -38,4 +44,5 @@ export const {
   useGetSongDetailsQuery,
   useGetSongRelatedQuery,
   useGetArtistDetailsQuery,
+  useGetSongsByCountryQuery,
 } = shazamCoreApi;
