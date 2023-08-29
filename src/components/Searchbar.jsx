@@ -16,7 +16,7 @@ const Searchbar = () => {
     <form
       onSubmit={handleSubmit}
       autoComplete="off"
-      className="p-2 focus-within:text-gray-600"
+      className="p-4 focus-within:text-gray-600"
     >
       <label htmlFor="search-field" className="sr-only">
         搜索
@@ -31,7 +31,7 @@ const Searchbar = () => {
           type="search"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="flex-1 p-4 text-base text-white placeholder-gray-500 bg-transparent border-none outline-none"
+          className="flex-1 max-w-md px-4 py-2 ml-2 text-base text-white placeholder-gray-500 bg-gray-700 border-none outline-none rounded-3xl"
         />
       </div>
     </form>
